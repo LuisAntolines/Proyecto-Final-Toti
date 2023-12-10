@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.09em;
+  line-height: 3;
+  overflow-x: hidden;
+}
+.titulo {
+  text-align: center;
+  background-image: url(../img/fondo.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  -webkit-text-stroke: 1px #000000;
+}
+
+html {
+  background: linear-gradient(
+    90deg,
+    rgba(252, 228, 236) 0%,
+    rgba(248, 187, 208) 35%,
+    rgba(249, 141, 179) 100%
+  );
+}
+
+.principal {
+  background-color: rgba(249, 141, 179);
+  padding-top: 30px;
+}
+
+.principal button {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(249, 141, 179);
+  color: white;
+  border-color: transparent;
+  transition: 1s;
+}
+
+.principal button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+#resultado {
+  height: 100px;
+  font-size: 160%;
+  font-family: serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+.collapse navbar-collapse {
+  display: inline-block;
+  text-align: right;
+  padding-left: 75px;
+  border-width: 1px;
+  border-style: solid;
+  height: 32px;
+  border-radius: 10px;
+}
+
+.badge1 {
+  font-family: serif;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  padding: 10px;
+  color: white;
+  border-color: black;
+  border-style: solid;
+}
+
+.informacion {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(249, 141, 179);
+  color: white;
+}
+
+.informacion h1 {
+  font-size: 40px;
+  overflow-y: hidden;
+  -webkit-text-stroke: 1px #000000;
+}
+
+.cartas {
+  gap: 30px;
+  margin-top: 10%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  vertical-align: baseline;
+  background: linear-gradient(
+    0deg,
+    rgba(252, 228, 236) 0%,
+    rgba(248, 187, 208) 35%,
+    rgba(249, 141, 179) 100%
+  );
+}
+
+.cartas .card {
+  width: 330px;
+  height: 644px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25;
+  align-items: center;
+}
+.cartas .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.cartas .card img {
+  border-radius: 20px;
+  height: 400px;
+  margin: 18px;
+  width: 90%;
+}
+
+.cartas .card h5 {
+  font-weight: 600;
+  overflow-y: hidden;
+}
+
+.cartas .card p {
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.pe {
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(252, 228, 236) 110%,
+    rgba(248, 187, 208) 0%
+  );
+  -webkit-text-stroke: 1px #000000;
+}
+
+.peTitulo {
+  font-family: serif;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: black;
+}
+
+/*Menu*/
+
+#menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  background-color: black;
+  z-index: 100;
+  color: white;
+}
+
+.division {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.espacio-logo {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.espacio-logo h1 {
+  font-family: serif;
+  font-size: 30px;
+  color: white;
+}
+
+.espacio-logo img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.enlace {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  height: 30px;
+}
+
+.search button {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(249, 141, 179);
+  color: white;
+}
+
+@media (max-width: 1224px) {
+  .cartas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      width: 700px;
+      height: auto;
+    }
+  }
+}
+.Registro {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#registroForm {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+#registroForm   label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#registroForm input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+#registroForm    button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#registroForm    button:hover {
+  background-color: #45a049;
+}
